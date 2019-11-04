@@ -4,7 +4,8 @@ const googleDatabase = [
     'flowers.com',
     'animals.com',
     'catpictures.com',
-    'myfavouritecats.com'
+    'myfavouritecats.com',
+    'myfavouritecats2.com'
 ];
 
 
@@ -16,4 +17,4 @@ const googleSearch = (searchInput) => {
     return matches.length > 3 ? matches.slice(0,3) : matches;
 }
 
-console.log(googleSearch('soup'));
+console.log(googleSearch('cat'));

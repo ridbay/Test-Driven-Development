@@ -8,11 +8,15 @@ dbMock = [
     'dogpictures.com'
 ]
 
-
-it('This is a silly test', () => {
-    expect('hello').toBe('hello')
-
+describe('Silly tests', () => {
+    it('This is a silly test', () => {
+        expect('hello').toBe('hello');
+    })
+    it('This is another silly test', () => {
+        expect(1).toBe(1);
+    })
 })
+
 
 describe('GoogleSearch', () => {
     it('is searching google', () => {

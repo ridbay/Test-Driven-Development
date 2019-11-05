@@ -6,7 +6,6 @@ it('calls swapi to get people', () => {
     expect.assertions(1)
     return swapi.getPeopleAsync(fetch).then(data => {
         expect(data.count).toEqual(87);
-
     })
 })
 

@@ -9,8 +9,8 @@ const googleDatabase = [
 ];
 
 
-const googleSearch = (searchInput) => {
-    const matches = googleDatabase.filter(website => {
+const googleSearch = (searchInput, db) => {
+    const matches = db.filter(website => {
         return website.includes(searchInput);
     })
 

@@ -24,8 +24,9 @@ it('getPeople returns count and results', ()=>{
             results: [0,1,2,3,4,5]
         })
     }))
-    expect.assertions(1)
+    expect.assertions(2)
     return swapi.getPeoplePromise(mockFetch).then(data=> {
         expect(mockFetch.mock.calls.length).toBe(0);
+        expect(mockFetch.tobeCalledWith('https://swapi.co/api/people'));
     })
 })
